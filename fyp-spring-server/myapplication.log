@@ -1,0 +1,47 @@
+2019-04-25 17:25:50.224  INFO 34612 --- [restartedMain] fyp.spring.WebApp                        : Starting WebApp on tamseelongMacBook-Pro with PID 34612 (/Users/tamseelong/Desktop/ee4216/hello-springboot-web/target/classes started by tamseelong in /Users/tamseelong/Desktop/ee4216/hello-springboot-web)
+2019-04-25 17:25:50.290  INFO 34612 --- [restartedMain] fyp.spring.WebApp                        : No active profile set, falling back to default profiles: default
+2019-04-25 17:25:50.762  INFO 34612 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@fa7ef61: startup date [Thu Apr 25 17:25:50 HKT 2019]; root of context hierarchy
+2019-04-25 17:25:58.062  INFO 34612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 31415 (http)
+2019-04-25 17:25:58.199  INFO 34612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-25 17:25:58.200  INFO 34612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 17:25:58.259  INFO 34612 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/tamseelong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-25 17:25:58.586  INFO 34612 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-25 17:25:58.589  INFO 34612 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7826 ms
+2019-04-25 17:25:58.909  INFO 34612 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-04-25 17:25:58.928  INFO 34612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 17:25:58.930  INFO 34612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 17:25:58.930  INFO 34612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 17:25:58.931  INFO 34612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 17:26:00.125  INFO 34612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 17:26:01.029  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@fa7ef61: startup date [Thu Apr 25 17:25:50 HKT 2019]; root of context hierarchy
+2019-04-25 17:26:01.628  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting],methods=[GET]}" onto public fyp.spring.Greeting fyp.spring.GreetingController.greeting(java.lang.String)
+2019-04-25 17:26:01.630  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/status],methods=[GET]}" onto public java.util.List<fyp.spring.HealthStatus> fyp.spring.HealthStatusController.getHealthStatus()
+2019-04-25 17:26:01.637  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/post-light/{light}],methods=[POST]}" onto public void fyp.spring.LightController.postLight(int)
+2019-04-25 17:26:01.638  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/light],methods=[GET]}" onto public java.util.List<fyp.spring.Light> fyp.spring.LightController.getLight()
+2019-04-25 17:26:01.642  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logging]}" onto public java.lang.String fyp.spring.LoggingController.index()
+2019-04-25 17:26:01.648  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/status],methods=[GET]}" onto public java.lang.String fyp.spring.RestfulController.status()
+2019-04-25 17:26:01.649  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/post-soil-moisture/{moisture}],methods=[POST]}" onto public void fyp.spring.SoilMoistureController.postSoilMoisture(int)
+2019-04-25 17:26:01.651  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/soil-moisture],methods=[GET]}" onto public java.util.List<fyp.spring.SoilMoisture> fyp.spring.SoilMoistureController.getSoilMoiisture()
+2019-04-25 17:26:01.653  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/post-temp-humi/{temp}/{humi}],methods=[POST]}" onto public void fyp.spring.TempHumiController.postLight(float,float)
+2019-04-25 17:26:01.654  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temp-humi],methods=[GET]}" onto public java.util.List<fyp.spring.TempHumi> fyp.spring.TempHumiController.getTempHumi()
+2019-04-25 17:26:01.661  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-25 17:26:01.664  INFO 34612 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-25 17:26:01.735  INFO 34612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 17:26:01.735  INFO 34612 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 17:26:01.840  INFO 34612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-04-25 17:26:02.432  INFO 34612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-25 17:26:02.505  INFO 34612 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-25 17:26:02.512  INFO 34612 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-25 17:26:02.522  INFO 34612 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-04-25 17:26:02.621  INFO 34612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 31415 (http) with context path ''
+2019-04-25 17:26:02.633  INFO 34612 --- [restartedMain] fyp.spring.WebApp                        : Started WebApp in 15.491 seconds (JVM running for 18.463)
+2019-04-25 17:45:01.176  INFO 34612 --- [http-nio-31415-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-25 17:45:01.176  INFO 34612 --- [http-nio-31415-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-25 17:45:01.207  INFO 34612 --- [http-nio-31415-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-04-25 17:45:01.462  INFO 34612 --- [http-nio-31415-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-25 17:45:01.865  INFO 34612 --- [http-nio-31415-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-25 17:47:40.439  INFO 34612 --- [Thread-9] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@fa7ef61: startup date [Thu Apr 25 17:25:50 HKT 2019]; root of context hierarchy
+2019-04-25 17:47:40.455  INFO 34612 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-25 17:47:40.458  INFO 34612 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-04-25 17:47:40.461  INFO 34612 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-25 17:47:40.484  INFO 34612 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

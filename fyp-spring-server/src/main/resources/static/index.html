@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Plant Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+        <div class="status-content">
+            <div class="status-left">
+                <div class="day-count">Day 1</div>
+                <div class="plant-type">Lettuce</div>
+            </div>
+            <div class="status-right">
+                <div class="health-status">
+                    <img class="health-img" src="good.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="data-content">
+            <button class="collapsible">Temperature</button>
+            <div class="temp-div">
+                <div class="current-temp content">Current Temperature
+                    <div class="current-temp-data current-data"></div>
+                </div>
+                <div class="best-temp content">Best Temperature
+                    <div class="best-temp-data best">15°C ~ 18°C</div>
+                </div>
+                
+                <div class="past-temp content">Past Temperature
+                    <canvas class="past-temp-data"></canvas>
+                </div>
+            </div>
+
+            <button class="collapsible">Humidity</button>
+                <div class="humi-div">
+                    <div class="current-humi content">Current Humidity
+                            <div class="current-humi-data current-data"></div>
+                    </div>
+                    <div class="best-humi content">Best Humidity
+                            <div class="best-humi-data best">50% ~ 70%</div>
+                    </div>
+                    <div class="past-humi content">Past Humidity
+                            <canvas class="past-humi-data"></canvas>
+                    </div>
+                </div>
+
+            <button class="collapsible">Light Intensity</button>
+                <div class="light-div">
+                        <div class="current-light content">Current Light Intensity
+                            <div class="current-light-data current-data"></div>
+                        </div>
+                        <div class="best-light content">Best Light Intensity
+                            <div class="best-light-data best">200 ~ 250</div>
+                        </div>
+                        <div class="past-light content">Past Light Intensity
+                            <canvas class="past-light-data"></canvas>
+                        </div>
+                </div>
+
+            <button class="collapsible">Soil Moisture</button>
+                <div class="soil-div">
+                    <div class="current-soil content">Current Soil Moisture
+                            <div class="current-soil-data current-data"></div>
+                    </div>
+                    <div class="best-soil content">Best Soil Moisture
+                            <div class="best-soil-data best">30% ~ 70%</div>
+                    </div>
+                    <div class="past-soil content">Past Soil Moisture
+                            <canvas class="past-soil-data"></canvas>
+                    </div>
+            </div>
+
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

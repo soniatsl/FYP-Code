@@ -1,0 +1,79 @@
+*{
+    background-color: #F3F3F3;
+}
+
+.collapsible {
+    background-color: #CFD8DC;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .temp-div, .humi-div, .light-div, .soil-div{
+      display: none;
+  }
+  
+  .content {
+    padding: 0 18px;
+    padding-top: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #F7EBC2;
+    margin: 5px;
+    min-height: 50px;
+  }
+
+  .current-data{
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    background-color: #F7EBC2;
+  }
+
+
+  .best{
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px; 
+    background-color: #F7EBC2;
+  }
+
+  .health-img{
+      width: 80px;
+      height: 80px;
+  }
+
+  .status-content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .status-right{
+      float: right;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+
+  .status-left{
+      float: left;
+  }
+
+  .day-count{
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .plant-type{
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  canvas{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
